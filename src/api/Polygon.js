@@ -10,15 +10,26 @@ export class Polygon {
 
   // Simple class instance methods using short-hand method
   // declaration
+
+  /**
+   * Return name.
+   * @returns {String} Sample string.
+   */
   sayName() {
     console.log("Hi, I am a ", `${this.name}.`);
+    return `${this.name}.`;
   }
 
+  /**
+   * Return height.
+   * @returns {String} Sample string.
+   */
   sayHistory() {
     console.log(
       "Polygon is derived from the Greek polus (many) and gonia (angle).",
       this.name
     );
+    return `${this.height}.`;
   }
 }
 
@@ -37,10 +48,19 @@ export class Square extends Polygon {
 
   // Getter/setter methods are supported in classes,
   // similar to their ES5 equivalents
+
+  /**
+   * Return area.
+   * @returns {Number} The Area.
+   */
   get area() {
     return this.height * this.width;
   }
 
+  /**
+   * Set the area to new number
+   * @param {Number} value A number to use to set value.
+   */
   set area(value) {
     this.area = value;
   }
@@ -54,6 +74,11 @@ export class Rectangle extends Polygon {
 
   // Here, sayName() is a subclassed method which
   // overrides their superclass method of the same name.
+
+  /**
+   * Return name.
+   * @returns {String} Sample string.
+   */
   sayName() {
     console.log("Sup! My name is ", `${this.name}.`);
     super.sayHistory();

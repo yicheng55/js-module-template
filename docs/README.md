@@ -5,18 +5,18 @@
 -   [Triple][1]
     -   [triple][2]
         -   [Parameters][3]
--   [Triple][4]
+-   [BiggerTriple][4]
     -   [triple][5]
         -   [Parameters][6]
--   [BiggerTriple][7]
-    -   [triple][8]
-        -   [Parameters][9]
--   [BiggerTriple][10]
-    -   [triple][11]
-        -   [Parameters][12]
--   [Polygon][13]
--   [Square][14]
--   [Rectangle][15]
+-   [Polygon][7]
+    -   [sayName][8]
+    -   [sayHistory][9]
+-   [Square][10]
+    -   [area][11]
+    -   [area][12]
+        -   [Parameters][13]
+-   [Rectangle][14]
+    -   [sayName][15]
 
 ## Triple
 
@@ -32,39 +32,9 @@ Triple the number.
 
 Returns **[Number][16]** The tripled number.
 
-## Triple
-
-Class for triple calculations.
-
-### triple
-
-Triple the number.
-
-#### Parameters
-
--   `n` **[Number][16]** A number to triple.
-
-Returns **[Number][16]** The tripled number.
-
 ## BiggerTriple
 
 Description of BiggerTriple Class.
-
-### triple
-
-Triple the number twice.
-
-#### Parameters
-
--   `n` **[Number][16]** A number to triple.
-
-Returns **[Number][16]** The bigger tripled number
-
-## BiggerTriple
-
-**Extends Triple**
-
-Class for bigger triple calculations.
 
 ### triple
 
@@ -80,13 +50,45 @@ Returns **[Number][16]** The bigger tripled number
 
 Description of BiggerTriple Class.
 
+### sayName
+
+Return name.
+
+Returns **[String][17]** Sample string.
+
+### sayHistory
+
+Return height.
+
+Returns **[String][17]** Sample string.
+
 ## Square
 
 Description of Square Class.
 
+### area
+
+Return area.
+
+Returns **[Number][16]** The Area.
+
+### area
+
+Set the area to new number
+
+#### Parameters
+
+-   `value` **[Number][16]** A number to use to set value.
+
 ## Rectangle
 
 Description of Rectangle Class.
+
+### sayName
+
+Return name.
+
+Returns **[String][17]** Sample string.
 
 [1]: #triple
 
@@ -94,28 +96,30 @@ Description of Rectangle Class.
 
 [3]: #parameters
 
-[4]: #triple-2
+[4]: #biggertriple
 
-[5]: #triple-3
+[5]: #triple-2
 
 [6]: #parameters-1
 
-[7]: #biggertriple
+[7]: #polygon
 
-[8]: #triple-4
+[8]: #sayname
 
-[9]: #parameters-2
+[9]: #sayhistory
 
-[10]: #biggertriple-1
+[10]: #square
 
-[11]: #triple-5
+[11]: #area
 
-[12]: #parameters-3
+[12]: #area-1
 
-[13]: #polygon
+[13]: #parameters-2
 
-[14]: #square
+[14]: #rectangle
 
-[15]: #rectangle
+[15]: #sayname-1
 
 [16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
