@@ -2,21 +2,120 @@
 
 ### Table of Contents
 
--   [sayHello][1]
-    -   [Parameters][2]
+-   [Triple][1]
+    -   [triple][2]
+        -   [Parameters][3]
+-   [Triple][4]
+    -   [triple][5]
+        -   [Parameters][6]
+-   [BiggerTriple][7]
+    -   [triple][8]
+        -   [Parameters][9]
+-   [BiggerTriple][10]
+    -   [triple][11]
+        -   [Parameters][12]
+-   [Polygon][13]
+-   [Square][14]
+-   [Rectangle][15]
 
-## sayHello
+## Triple
 
-This function says hello.
+Description of Triple Class.
 
-### Parameters
+### triple
 
--   `name` **[string][3]** Some name to say hello for. (optional, default `"Haz"`)
+Triple the number.
 
-Returns **[string][3]** The hello.
+#### Parameters
 
-[1]: #sayhello
+-   `n` **[Number][16]** A number to triple.
 
-[2]: #parameters
+Returns **[Number][16]** The tripled number.
 
-[3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+## Triple
+
+Class for triple calculations.
+
+### triple
+
+Triple the number.
+
+#### Parameters
+
+-   `n` **[Number][16]** A number to triple.
+
+Returns **[Number][16]** The tripled number.
+
+## BiggerTriple
+
+Description of BiggerTriple Class.
+
+### triple
+
+Triple the number twice.
+
+#### Parameters
+
+-   `n` **[Number][16]** A number to triple.
+
+Returns **[Number][16]** The bigger tripled number
+
+## BiggerTriple
+
+**Extends Triple**
+
+Class for bigger triple calculations.
+
+### triple
+
+Triple the number twice.
+
+#### Parameters
+
+-   `n` **[Number][16]** A number to triple.
+
+Returns **[Number][16]** The bigger tripled number
+
+## Polygon
+
+Description of BiggerTriple Class.
+
+## Square
+
+Description of Square Class.
+
+## Rectangle
+
+Description of Rectangle Class.
+
+[1]: #triple
+
+[2]: #triple-1
+
+[3]: #parameters
+
+[4]: #triple-2
+
+[5]: #triple-3
+
+[6]: #parameters-1
+
+[7]: #biggertriple
+
+[8]: #triple-4
+
+[9]: #parameters-2
+
+[10]: #biggertriple-1
+
+[11]: #triple-5
+
+[12]: #parameters-3
+
+[13]: #polygon
+
+[14]: #square
+
+[15]: #rectangle
+
+[16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
