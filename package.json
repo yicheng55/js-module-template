@@ -1,9 +1,9 @@
 {
-  "name": "generator-nod",
+  "name": "node-module-template",
   "version": "0.0.1",
   "description": "My node module",
   "license": "MIT",
-  "repository": "diegohaz/nod",
+  "repository": "mitevpi/node-module-template",
   "main": "dist/index.js",
   "author": {
     "name": "Petr Mitev",
