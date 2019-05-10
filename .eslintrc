@@ -6,14 +6,13 @@
     "plugin:prettier/recommended",
     "prettier/flowtype"
   ],
-  "plugins": [
-    "flowtype",
-    "flowtype-errors"
-  ],
+  "plugins": ["flowtype", "flowtype-errors"],
   "env": {
     "jest": true
   },
   "rules": {
-    "flowtype-errors/show-errors": "error"
+    "flowtype-errors/show-errors": "error",
+    "no-console": "off",
+    "semi": ["error", "always"]
   }
 }

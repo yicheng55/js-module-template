@@ -1,3 +1,6 @@
 coverage
 dist
 node_modules
+docs
+samples
+wip
