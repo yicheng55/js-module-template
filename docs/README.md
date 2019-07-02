@@ -48,7 +48,7 @@ Returns **[Number][16]** The bigger tripled number
 
 ## Polygon
 
-Description of BiggerTriple Class.
+Description of Polygon Class.
 
 ### sayName
 

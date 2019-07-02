@@ -20,7 +20,7 @@ export { Triple } from "./api/Triple";
  */
 export { BiggerTriple } from "./api/Triple";
 /**
- * Description of BiggerTriple Class.
+ * Description of Polygon Class.
  * @property {BiggerTriple}
  */
 export { Polygon } from "./api/Polygon";
