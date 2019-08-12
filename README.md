@@ -132,7 +132,8 @@ Just make sure to edit `package.json`, `README.md` and `LICENSE` files according
      input: "dist/index.js",
      plugins: [
        minify({
-         // Options for babel-minify.
+         comments: false
+         // Any other options for babel-minify.
        })
      ]
    };
@@ -254,7 +255,7 @@ npm run build # transpile code and build module
 ### Publish
 
 ```sh
-npm release
+npm run release
 npm publish
 ```
 
