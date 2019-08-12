@@ -1,7 +1,7 @@
 {
-  "name": "node-module-template",
-  "version": "0.0.1",
-  "description": "My node module",
+  "name": "js-module-template",
+  "version": "0.0.2",
+  "description": "My JS/NodeJS module",
   "license": "MIT",
   "repository": "mitevpi/node-module-template",
   "main": "dist/index.js",
@@ -46,7 +46,11 @@
     ]
   },
   "keywords": [
-    "generator-nod"
+    "node",
+    "module",
+    "package",
+    "template",
+    "npm"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -59,13 +63,14 @@
     "babel-jest": "24.8.0",
     "documentation": "12.1.1",
     "eslint": "6.1.0",
-    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-config-airbnb-base": "14.0.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-flowtype": "4.2.0",
     "eslint-plugin-flowtype-errors": "4.1.0",
     "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.15.0",
     "eslint-plugin-prettier": "3.1.0",
-    "flow-bin": "0.104.0",
+    "flow-bin": "0.105.1",
     "flow-copy-source": "2.0.7",
     "husky": "3.0.3",
     "jest": "24.8.0",
