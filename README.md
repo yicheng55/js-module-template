@@ -6,7 +6,9 @@
 
 JS & NodeJS module boilerplate. Use this as a starting point for your next `npm`/`yarn` or `cdn` package/module to write organized, reusable code.
 
-## Features - All Builds
+## Features
+
+### All Build Features
 
 - [**Babel**](https://babeljs.io/) - Write next generation JavaScript today.
 - [**Jest**](https://facebook.github.io/jest) - JavaScript testing framework used by Facebook.
@@ -17,7 +19,7 @@ JS & NodeJS module boilerplate. Use this as a starting point for your next `npm`
 - [**Documentation**](http://documentation.js.org/) - A documentation system so good, you'll actually write documentation.
 - [**Standard Version**](https://github.com/conventional-changelog/standard-version) - Automate versioning and CHANGELOG generation.
 
-## Features - CDN Build
+### CDN Build Features
 
 - [**Rollup**](https://rollupjs.org/guide/en/) - Aggregate code into one compact file.
 - [**Babel Minify**](https://github.com/babel/minify) - Slim down code for streamlined, low impact CDN delivery.
@@ -233,6 +235,8 @@ Just make sure to edit `package.json`, `README.md` and `LICENSE` files according
 
 ## Usage
 
+### Starting a Project
+
 Clone the repository, and use it as the starting point of your project.
 
 ```sh
@@ -242,7 +246,7 @@ rm -rf .git
 npm i
 ```
 
-## Commands
+### Commands
 
 ```sh
 npm test # run tests with Jest
@@ -260,3 +264,54 @@ npm publish
 ```
 
 It'll automatically run `test`, `lint`, `docs`, `build`, generate `CHANGELOG.md`, and push commits and tags to the remote repository.
+
+## Usage In Other Projects (After Build)
+
+### Imports
+
+Imports can be done through the aggregating index.js file or via individual members. Make sure to substitute the
+names `module` & `Module`, and `Class1` & `Class2` for the actual names of your module and classes respectively.
+
+#### Full Import
+
+```js
+// es5
+const module = require('./index.js'); // from source
+const module = require('module') // from npm
+
+// es6
+import * as Module from "../src"; // from source
+import * as Module from from "module"; // from npm
+```
+
+#### Individual Import
+
+```js
+// from source
+const Class1 = require("./Color");
+const Class2 = require("./Place");
+
+// from npm
+const { Class1 } = require("module");
+const { Class2 } = require("module");
+import { Class1, Class2 } from "module"; // es6
+```
+
+#### CDN (If CDN Build Steps are Added to Project)
+
+```html
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- import minified script from CDN or copy it locally -->
+    <script src="../dist/module.umd.min.js"></script> 
+  </head>
+
+  <body>
+    <script>
+      console.log("LIBRARY", moduleName); // imported lib object: classes, functions
+      console.log("RESULT", result); // 15
+    </script>
+  </body>
+</html>;
+```
