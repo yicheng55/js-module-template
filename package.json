@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "My JS/NodeJS module",
   "license": "MIT",
-  "repository": "mitevpi/node-module-template",
+  "repository": "mitevpi/js-module-template",
   "main": "dist/index.js",
   "author": {
     "name": "Petr Mitev",
