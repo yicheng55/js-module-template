@@ -1,8 +1,8 @@
 # JS & NodeJS ES6 Module Template
 
-[![Generic badge](https://img.shields.io/badge/Docs-Web-Green.svg)](https://mitevpi.github.io/node-module-template/) [![Generic badge](https://img.shields.io/badge/Docs-MD-Green.svg)](docs/README.md) [![Generic badge](https://img.shields.io/badge/Samples-JS-Green.svg)](samples)
+[![Generic badge](https://img.shields.io/badge/Docs-Web-Green.svg)](https://mitevpi.github.io/js-module-template/) [![Generic badge](https://img.shields.io/badge/Docs-MD-Green.svg)](docs/README.md) [![Generic badge](https://img.shields.io/badge/Samples-JS-Green.svg)](samples)
 
-[![GitHub issues](https://img.shields.io/github/issues/mitevpi/node-module-template.svg)](https://github.com/mitevpi/node-module-template/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/mitevpi/node-module-template.svg)](https://github.com/mitevpi/node-module-template/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues/mitevpi/js-module-template.svg)](https://github.com/mitevpi/js-module-template/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/mitevpi/js-module-template.svg)](https://github.com/mitevpi/js-module-template/commits/master)
 
 JS & NodeJS module boilerplate. Use this as a starting point for your next `npm`/`yarn` or `cdn` package/module to write organized, reusable code.
 
@@ -236,7 +236,7 @@ Clone the repository, and use it as the starting point of your project.
 
 ```sh
 cd my-module
-git clone https://github.com/mitevpi/node-module-template.git
+git clone https://github.com/mitevpi/js-module-template.git
 rm -rf .git
 npm i
 ```
