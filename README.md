@@ -288,8 +288,8 @@ import * as Module from from "module"; // from npm
 
 ```js
 // from source
-const Class1 = require("./Color");
-const Class2 = require("./Place");
+const Class1 = require("./Class1");
+const Class2 = require("./Class2");
 
 // from npm
 const { Class1 } = require("module");
