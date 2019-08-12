@@ -26,7 +26,51 @@ JS & NodeJS module boilerplate. Use this as a starting point for your next `npm`
 
 Just make sure to edit `package.json`, `README.md` and `LICENSE` files accordingly with your module's info.
 
-## Adding Features
+### Adding Features
+
+<details><summary><strong>CDN Build</strong></summary>
+  
+1. Install dependencies:
+
+    ```sh
+    npm i -D rollup rollup-plugin-babel rollup-plugin-babel-minify rollup-plugin-commonjs rollup-plugin-node-resolve rollup-plugin-replace rollup-watch
+    ```
+
+2. Add a `rollup.config.js` file in the root of the repository with the following contents:
+
+   ```js
+   import minify from "rollup-plugin-babel-minify";
+
+   module.exports = {
+     input: "dist/index.js",
+     plugins: [
+       minify({
+         comments: false
+         // Any other options for babel-minify.
+       })
+     ]
+   };
+   ```
+
+3. Replace the build script/line in the `package.json` file with the following lines (make sure to replace the `{YOUR_PKG_NAME}` below
+   with the actual name of your module):
+
+   ```json
+   "build": "npm run build:common-js && npm run build:umd && npm run build:umd:min",
+   "build:common-js": "babel src -d dist",
+   "build:umd": "node_modules/.bin/rollup src/index.js --file dist/{YOUR_PKG_NAME}.umd.js --format umd --name {YOUR_PKG_NAME}",
+   "build:umd:watch": "npm run build:umd -- --watch",
+   "build:umd:min": "node_modules/.bin/rollup src/index.js --file dist/{YOUR_PKG_NAME}.umd.min.js --config --format umd --compact --name {YOUR_PKG_NAME}",
+   ```
+
+4. Add appropriate entry points to your package.json file:
+
+    ```json
+    "browser": "dist/{YOUR_PKG_NAME}.umd.min.js",
+    "cdn": "dist/{YOUR_PKG_NAME}.umd.min.js",
+    ```
+
+</details>
 
 <details><summary><strong>TypeScript</strong></summary>
   
@@ -117,51 +161,7 @@ Just make sure to edit `package.json`, `README.md` and `LICENSE` files according
 
 </details>
 
-<details><summary><strong>CDN Build</strong></summary>
-  
-1. Install dependencies:
-
-    ```sh
-    npm i -D rollup rollup-plugin-babel rollup-plugin-babel-minify rollup-plugin-commonjs rollup-plugin-node-resolve rollup-plugin-replace rollup-watch
-    ```
-
-2. Add a `rollup.config.js` file in the root of the repository with the following contents:
-
-   ```js
-   import minify from "rollup-plugin-babel-minify";
-
-   module.exports = {
-     input: "dist/index.js",
-     plugins: [
-       minify({
-         comments: false
-         // Any other options for babel-minify.
-       })
-     ]
-   };
-   ```
-
-3. Replace the build script/line in the `package.json` file with the following lines (make sure to replace the `{YOUR_PKG_NAME}` below
-   with the actual name of your module):
-
-   ```json
-   "build": "npm run build:common-js && npm run build:umd && npm run build:umd:min",
-   "build:common-js": "babel src -d dist",
-   "build:umd": "node_modules/.bin/rollup src/index.js --file dist/{YOUR_PKG_NAME}.umd.js --format umd --name {YOUR_PKG_NAME}",
-   "build:umd:watch": "npm run build:umd -- --watch",
-   "build:umd:min": "node_modules/.bin/rollup src/index.js --file dist/{YOUR_PKG_NAME}.umd.min.js --config --format umd --compact --name {YOUR_PKG_NAME}",
-   ```
-
-4. Add appropriate entry points to your package.json file:
-
-    ```json
-    "browser": "dist/{YOUR_PKG_NAME}.umd.min.js",
-    "cdn": "dist/{YOUR_PKG_NAME}.umd.min.js",
-    ```
-
-</details>
-
-## Removing Features
+### Removing Features
 
 <details><summary><strong>Flow</strong></summary>
 
