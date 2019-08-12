@@ -4,13 +4,16 @@
     "airbnb-base",
     "plugin:flowtype/recommended",
     "plugin:prettier/recommended",
-    "prettier/flowtype"
+    "prettier/flowtype",
+    "plugin:jest/recommended"
   ],
-  "plugins": ["flowtype", "flowtype-errors"],
+  "plugins": ["flowtype", "flowtype-errors", "jest"],
   "env": {
-    "jest": true
+    "jest": true,
+    "jest/globals": true
   },
   "rules": {
+    "max-classes-per-file": "off",
     "flowtype-errors/show-errors": "error",
     "no-console": "off",
     "semi": ["error", "always"],
